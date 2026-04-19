@@ -12,8 +12,6 @@ Panel order matches the equation order in Section 2.2:
   a) Casing roughness -> pressure equation (Eq. 4)
   b) Heat-loss coefficient -> energy equation (Eq. 5)
 
-Addresses reviewer comments: 3.10, 3.15, 3.37, 3.38
-
 Results are cached via pickle to avoid rerunning. Delete the .pkl file
 to force a recomputation.
 
