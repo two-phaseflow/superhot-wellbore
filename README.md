@@ -2,7 +2,7 @@
 
 Code accompanying:
 
-> Scott, S.W. (2026), Thermo-Hydraulic Drivers of Superhot Geothermal Well Performance, *Geothermics*. https://doi.org/[DOI]
+> Scott, S.W. (2026), Thermo-hydraulic drivers of superhot geothermal well performance, *Geothermics*, 141, 103784. https://doi.org/10.1016/j.geothermics.2026.103784
 
 ## Description
 
@@ -69,10 +69,12 @@ If you use this code, please cite:
 ```bibtex
 @article{Scott2026superhot,
   author  = {Scott, Samuel W.},
-  title   = {Thermo-Hydraulic Drivers of Superhot Geothermal Well Performance},
+  title   = {Thermo-hydraulic drivers of superhot geothermal well performance},
   journal = {Geothermics},
   year    = {2026},
-  doi     = {[DOI]}
+  volume  = {141},
+  pages   = {103784},
+  doi     = {10.1016/j.geothermics.2026.103784}
 }
 ```
 

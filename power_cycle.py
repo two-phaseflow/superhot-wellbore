@@ -9,8 +9,9 @@ simplified single-flash and binary (heat-exchanger) steam cycles.
 
 Implements the power cycle model described in:
 
-    Scott, S.W. (2025). Thermo-hydraulic drivers of superhot
-    geothermal well performance. Geothermics.
+    Scott, S.W. (2026). Thermo-hydraulic drivers of superhot
+    geothermal well performance. Geothermics 141, 103784.
+    https://doi.org/10.1016/j.geothermics.2026.103784
 
     The turbine expansion equations in that paper (Eqs. 6-12)
     follow the standard geothermal power plant thermodynamic
@@ -270,8 +271,9 @@ J/kg -> MWe (/ 1e6), MJ/kg (/ 1e6) on output.
 
 References
 ----------
-    - Scott, S.W. (2025). Thermo-hydraulic drivers of superhot
-      geothermal well performance. Geothermics.
+    - Scott, S.W. (2026). Thermo-hydraulic drivers of superhot
+      geothermal well performance. Geothermics 141, 103784.
+      https://doi.org/10.1016/j.geothermics.2026.103784
     - DiPippo, R. (2012). Geothermal Power Plants: Principles,
       Applications, Case Studies and Environmental Impact, 3rd ed.,
       Butterworth-Heinemann. [Eqs. 5.6-5.17, 5.29-5.31, 5.47, 7.3-7.15]
@@ -287,7 +289,9 @@ References
       energy conversion systems: dry steam and superheated steam
       plants. In: Geothermal Power Generation, Elsevier, Ch. 11,
       291-319.
-    - Dichter, N. (2025). Water-based geothermal binary cycles.
+    - Dichter, D.W. (2025). Water-based geothermal binary cycles.
+      Proceedings, 50th Workshop on Geothermal Reservoir Engineering,
+      Stanford University, Stanford, CA, SGP-TR-229.
       [Working fluid selection for superhot systems]
     - Bell, I.H., Wronski, J., Quoilin, S., Lemort, V. (2014).
       Pure and pseudo-pure fluid thermophysical property evaluation

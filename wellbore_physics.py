@@ -9,8 +9,9 @@ near the critical point of water.
 
 Implements the wellbore model (Eqs. 4-5) described in: 
 
-    Scott, S.W. (2025). Thermo-hydraulic drivers of superhot
-    geothermal well performance. Geothermics.
+    Scott, S.W. (2026). Thermo-hydraulic drivers of superhot
+    geothermal well performance. Geothermics 141, 103784.
+    https://doi.org/10.1016/j.geothermics.2026.103784
 
 Public interface
 ----------------
@@ -193,7 +194,7 @@ Depth- or temperature-dependent heat-loss coefficient:
 Default parameters
 ------------------
 DEFAULT_WELL_PARAMS contains the reference values from
-Scott (2025, Table 1):
+Scott (2026, Table 1):
 
     diameter_m       = 0.217   Internal diameter [m] (IDDP-1)
     depth_m          = 2100    Well depth [m]
@@ -203,8 +204,9 @@ Scott (2025, Table 1):
 
 References
 ----------
-Scott, S.W. (2025). Thermo-hydraulic drivers of superhot geothermal
-    well performance. Geothermics.
+Scott, S.W. (2026). Thermo-hydraulic drivers of superhot geothermal
+    well performance. Geothermics 141, 103784.
+    https://doi.org/10.1016/j.geothermics.2026.103784
 Tonkin, R.A., O'Sullivan, M.J., O'Sullivan, J.P. (2021). A review
     of mathematical models for geothermal wellbore simulation.
     Geothermics 97, 102255.
@@ -814,7 +816,7 @@ def pressure_gradient(density, velocity, viscosity, diameter,
     """
     Pressure gradient for steady upward flow in a vertical wellbore.
 
-    From Scott (2025), Eq. (4):
+    From Scott (2026), Eq. (4):
 
         dP/dz = -rho*g - (f / 2D) * rho * v^2
 
@@ -902,7 +904,7 @@ def enthalpy_gradient(temperature_K, T_rock_K, mass_flow_rate,
     """
     Specific enthalpy gradient dh/dz for steady upward flow.
 
-    From Scott (2025), Eq. (5):
+    From Scott (2026), Eq. (5):
 
         dh/dz = -g + (mdot/A)^2 * (1/rho^3) * (drho/dz)
                 - (U/mdot) * (T - T_rock)

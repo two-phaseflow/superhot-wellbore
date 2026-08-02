@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-IDDP-1 Downhole Profiles: Figure 6 from Scott (2025)
+IDDP-1 Downhole Profiles: Figure 6 from Scott (2026)
 =====================================================
 
 Simulates downhole pressure, temperature, and specific enthalpy

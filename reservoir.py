@@ -9,8 +9,9 @@ given reservoir properties.
 
 Implements the reservoir model described in:
 
-    Scott, S.W. (2025). Thermo-hydraulic drivers of superhot
-    geothermal well performance. Geothermics.
+    Scott, S.W. (2026). Thermo-hydraulic drivers of superhot
+    geothermal well performance. Geothermics 141, 103784.
+    https://doi.org/10.1016/j.geothermics.2026.103784
 
     Equations (1)-(3) in that paper correspond to darcy_pressure_drop()
     and bottomhole_pressure() in this module. Equations (4)-(5) are
@@ -236,7 +237,7 @@ Three options are provided:
 
     rock_temperature_linear(well_params, T_reservoir_C):
         Linear gradient from T_surface to T_reservoir. Used for the
-        parametric analyses in Scott (2025), where each (P, T, depth)
+        parametric analyses in Scott (2026), where each (P, T, depth)
         combination requires a profile anchored to T_reservoir.
 
     rock_temperature_boiling(well_params):
@@ -267,8 +268,9 @@ Future extensions
 
 References
 ----------
-    - Scott, S.W. (2025). Thermo-hydraulic drivers of superhot
-      geothermal well performance. Geothermics.
+    - Scott, S.W. (2026). Thermo-hydraulic drivers of superhot
+      geothermal well performance. Geothermics 141, 103784.
+      https://doi.org/10.1016/j.geothermics.2026.103784
     - Grant, M.A., Donaldson, I.G., Bixley, P.F. (1982). Geothermal
       Reservoir Engineering. Academic Press, New York.
     - Grant, M.A. and Bixley, P.F. (2011). Geothermal Reservoir
@@ -474,7 +476,7 @@ def _get_well_depths(well_params):
 #
 #     dP_res = mdot * mu * ln(r_e / r_w) / (2 * pi * rho * k * b)
 #
-# This is Eq. (2) in Scott (2025), following the standard treatment
+# This is Eq. (2) in Scott (2026), following the standard treatment
 # in Grant et al. (1982, Ch. 3) and Grant and Bixley (2011, Ch. 3).
 #
 # Note that k*b = transmissivity [m2*m = m3] appears as a single
@@ -703,7 +705,7 @@ def coupled_model(mass_flow_rate, P_reservoir_MPa, T_reservoir_C,
     Coupled reservoir-wellbore model: reservoir -> BHP -> wellbore -> WHP.
 
     This is the central function that chains together the model
-    components described in Scott (2025, Section 2 and Figure 3):
+    components described in Scott (2026, Section 2 and Figure 3):
         1. Darcy reservoir flow -> bottomhole conditions (P_bh, h_fz)
         2. Wellbore simulator -> wellhead conditions
         3. Surface conditions extracted from wellbore profiles
@@ -1632,7 +1634,7 @@ def depth_for_pressure(pressure_MPa, P_shallow=15.0, P_deep=45.0,
 
     The depth-pressure relationship reflects the hydrostatic gradient
     in continental crust. The default parameters span the range of
-    superhot systems considered in Scott (2025): shallow magmatic
+    superhot systems considered in Scott (2026): shallow magmatic
     systems (~2 km, 15 MPa) to deep high-pressure systems (~5 km,
     45 MPa). Pressures outside this range are clamped to the
     boundary depths.
@@ -1674,7 +1676,7 @@ def rock_temperature_linear(well_params, T_reservoir_C, T_surface_C=10.0):
         T(z) = T_surface + (T_reservoir - T_surface) / well_depth * z
 
     This is the appropriate profile for the parametric analyses in
-    Scott (2025), where well depth and reservoir temperature are
+    Scott (2026), where well depth and reservoir temperature are
     co-varied and the rock temperature at the well bottom must equal
     the reservoir temperature.
 

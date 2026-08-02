@@ -5,7 +5,7 @@ IDDP-1 Calibration and Figure 5: Deliverability Curve
 
 Calibrates the coupled reservoir-wellbore model against IDDP-1 discharge
 data (Ingason et al., 2014) by optimizing reservoir pressure and
-transmissivity. Produces Figure 5 from Scott (2025).
+transmissivity. Produces Figure 5 from Scott (2026).
 
 Usage:
     python calibrate_iddp1.py
@@ -108,7 +108,7 @@ def calibrate(verbose=True):
 # ====================================================================
 def plot_figure5(cal):
     """
-    Reproduce Figure 5 from Scott (2025).
+    Reproduce Figure 5 from Scott (2026).
     WHP (x) vs mass flow rate (left y, solid) and WHT (right y, dashed).
     Red circles: IDDP-1 data. Black lines: calibrated model.
     """
